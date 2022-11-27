@@ -1,0 +1,64 @@
+* {
+    margin: 0;padding: 0;
+}
+.container {
+    width: 80%;
+    max-width:750px;
+    border:2px dotted black;
+    /* height: 100vh; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.main{
+    border: 2px solid purple;
+    flex-grow: 3;
+    display:flex;
+    flex-direction:column;
+}
+.sidebar {
+    border: 2px solid purple;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+/* now we will make the display of main to flex and get 4 div inside it. Also, we will make the display of sidebar to flex and get 2 dive inside it. */
+.main-content-1 {
+    flex-grow:3.5;
+    /* height:40%; */
+    background-color:red;
+    margin: 2px 0;
+}
+.main-content-2, 
+.main-content-3,
+.main-content-4 {
+    flex-grow:1;
+    /* height:60%; */
+    background-color:blue;
+    margin: 2px 0;
+}
+.sidebar-content-1 {
+    background-color:blanchedalmond;
+    margin: 2px 0;
+    flex-grow: 2;
+}
+.sidebar-content-2 {
+    background-color: aquamarine;
+    margin: 2px 0;
+    flex-grow:3;
+}
+.featured-image {
+    width: 100%;
+    max-width: 400px;
+    height:auto;
+}
+.recent-article-image {
+    width: 100%;
+    max-width: 400px;
+    height:auto;
+}
+.widget-image {
+    width: 100%;
+    max-width: 400px;
+    height:auto;
+}
